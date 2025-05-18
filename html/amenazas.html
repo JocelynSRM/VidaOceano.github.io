@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Amenazas al Océano</title>
+	
+	<!-- Bootstrap 4 CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	
+	<link rel="stylesheet" href="../css/amenazas.css" type="text/css">
+</head>
+	
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+
+    <!-- Logo e Inicio -->
+    <a class="navbar-brand" href="../index.html">
+      <img src="../images/logo2.png" alt="Logo" width="30" height="30" class="d-inline-block align-top">
+      Inicio
+    </a>
+
+    <!-- Botón hamburguesa -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContenido" aria-controls="navbarContenido" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Contenido colapsable -->
+    <div class="collapse navbar-collapse" id="navbarContenido">
+      <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+
+        <!-- Dropdown: Explora y Vida Marina -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="seccion1Dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Aventura Marina
+          </a>
+          <div class="dropdown-menu" aria-labelledby="seccion1Dropdown">
+            <a class="dropdown-item" href="explora.html">Explora los océanos</a>
+            <a class="dropdown-item" href="vida.html">Vida Marina</a>
+          </div>
+        </li>
+
+        <!-- Héroes del Océano -->
+        <li class="nav-item">
+          <a class="nav-link" href="heroes.html">Héroes</a>
+        </li>
+
+        <!-- Amenazas al Océano -->
+        <li class="nav-item">
+          <a class="nav-link" href="amenazas.html">Amenazas</a>
+        </li>
+
+        <!-- Dropdown: Aprende y Recursos -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="seccion2Dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Explora y Aprende
+          </a>
+          <div class="dropdown-menu" aria-labelledby="seccion2Dropdown">
+            <a class="dropdown-item" href="aprende.html">Aprende</a>
+            <a class="dropdown-item" href="recursos.html">Recursos</a>
+          </div>
+        </li>
+
+        <!-- Dropdown: Sobre y Contacto -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="seccion3Dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Conócenos
+          </a>
+          <div class="dropdown-menu" aria-labelledby="seccion3Dropdown">
+            <a class="dropdown-item" href="sobre.html">Nosotros</a>
+            <a class="dropdown-item" href="contacto.html">Contacto</a>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- TÍTULO -->
+<div class="container text-center scroll-reveal">
+  <h2>Amenazas al Océano</h2>
+</div>
+
+<!-- TARJETAS -->
+<div class="container scroll-reveal">
+
+  <!-- Contaminación -->
+  <div class="card scroll-reveal">
+    <div class="row no-gutters align-items-center">
+      <div class="col-md-5 d-flex align-items-center justify-content-center mb-3 mb-md-0">
+        <img src="../images/contaminacion.webp" class="img-fluid scroll-reveal" alt="Contaminación marina">
+      </div>
+      <div class="col-md-7 pl-4">
+        <h5 class="scroll-reveal">Contaminación</h5>
+        <p class="card-text scroll-reveal">La contaminación marina incluye desechos plásticos, vertidos químicos, metales pesados y nutrientes excesivos que alteran la química del agua y dañan los ecosistemas. Gran parte de los plásticos flota en parches de basura, mientras que fragmentos ingeridos por peces y aves marinas causan bloqueos intestinales y envenenamientos. Además, nutrientes como nitrógeno y fósforo, provenientes de fertilizantes agrícolas, provocan floraciones algales nocivas que agotan el oxígeno y generan “zonas muertas” donde nada puede sobrevivir.</p>
+        <a href="https://www.noaa.gov/education/resource-collections/ocean-coasts/ocean-pollution?utm_source"><button class="scroll-reveal">CONOCE MÁS...</button></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cambio climático -->
+  <div class="card scroll-reveal">
+    <div class="row no-gutters align-items-center">
+      <div class="col-md-5 order-md-2 d-flex align-items-center justify-content-center mb-3 mb-md-0">
+        <img src="../images/cambio.webp" class="img-fluid scroll-reveal" alt="Cambio climático">
+      </div>
+      <div class="col-md-7 order-md-1 pl-4">
+        <h5 class="scroll-reveal">Cambio climático</h5>
+        <p class="card-text scroll-reveal">El aumento de la temperatura global eleva la temperatura del mar, intensifica las olas de calor marinas y acelera el deshielo polar, contribuyendo al alza del nivel del mar. La mayor absorción de C0 por los océanos provoca la acidificación debilitando conchas y esqueletos de corales, moluscos y plancton calcáreo. Estos cambios alteran corrientes océanicas esenciales para la distribución de nutrientes y especies, y reducen la capacidad del océano para almacenar carbono, retroalimentando el calentamiento global.</p>
+        <a href="https://www.un.org/en/climatechange/science/climate-issues/ocean-impacts?utm_source"><button class="scroll-reveal">CONOCE MÁS...</button></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pesca excesiva -->
+  <div class="card scroll-reveal">
+    <div class="row no-gutters align-items-center">
+      <div class="col-md-5 d-flex align-items-center justify-content-center mb-3 mb-md-0">
+        <img src="../images/pesca.webp" class="img-fluid scroll-reveal" alt="Pesca Excesiva">
+      </div>
+      <div class="col-md-7 pl-4">
+        <h5 class="scroll-reveal">Pesca excesiva</h5>
+        <p class="card-text scroll-reveal">La sobrepesca remueve poblaciones enteras antes de que puedan reproducirse, reduciendo el tamaño promedio de los peces y distorsionando las relaciones tróficas. Al eliminar depredadores o especies clave, se desestabilizan las redes alimentarias, aumenta la vulnerabilidad a invasiones biológicas y se deterioran hábitats críticos como arrecifes y praderas marinas. Además, el descarte masivo de capturas no deseadas (bycatch) agrava la presión sobre tortugas, aves marinas y mamíferos.</p>
+        <a href="https://www.worldwildlife.org/threats/overfishing?utm_source"><button class="scroll-reveal">CONOCE MÁS...</button></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pérdida de biodiversidad -->
+  <div class="card scroll-reveal">
+    <div class="row no-gutters align-items-center">
+      <div class="col-md-5 order-md-2 d-flex align-items-center justify-content-center mb-3 mb-md-0">
+        <img src="../images/perdida.webp" class="img-fluid scroll-reveal" alt="Pérdida de Biodiversidad">
+      </div>
+      <div class="col-md-7 order-md-1 pl-4">
+        <h5 class="scroll-reveal">Pérdida de biodiversidad</h5>
+        <p class="card-text scroll-reveal">Las actividades humanas —contaminación, cambio climático y explotación intensiva— han alterado dos tercios de los hábitats marinos, provocando tasas de extinción sin precedentes. La desaparición de especies reduce la resiliencia de los ecosistemas, compromete la provisión de servicios esenciales (como pesca, protección costera y regulación climática) y debilita su capacidad de adaptarse a nuevos disturbios. Sin una acción urgente, muchas comunidades costeras y sistemas naturales podrían colapsar.</p>
+        <a href="https://oursharedseas.com/threats/threats-habitat-and-biodiversity/?utm_source"><button class="scroll-reveal">CONOCE MÁS...</button></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Actividad -->
+  <div class="card scroll-reveal">
+    <div class="row no-gutters align-items-center">
+      <div class="col-md-5 d-flex align-items-center justify-content-center mb-3 mb-md-0">
+        <img src="../images/actividad.webp" class="img-fluid scroll-reveal" alt="Océano">
+      </div>
+      <div class="col-md-7 pl-4">
+        <h5 class="scroll-reveal">Actividad: Acciones y Consecuencias</h5>
+        <p class="card-text scroll-reveal">Te invita a explorar cómo nuestras decisiones impactan el océano. A través de ejemplos reales y situaciones cotidianas, reflexionarás sobre temas como la contaminación marina, el cambio climático, la pesca excesiva y la pérdida de biodiversidad. ¿Qué sucede si tiramos basura al mar? ¿Cómo afecta nuestra alimentación a los ecosistemas marinos? Conoce las conexiones entre lo que hacemos y sus efectos en el planeta, y descubre cómo puedes ser parte del cambio.</p>
+        <a href="https://drive.google.com/drive/folders/1q5nkv79kxkrBmVDf0kulYo6Zz5Q259aX?usp=drive_link"><button class="scroll-reveal">CONOCE MÁS...</button></a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- FOOTER -->
+<footer class="footer text-center">
+  <div class="container">
+    <div class="row">
+		<div class="col-md-4">
+		<a class="navbar-brand" href="../index.html">
+      <img src="../images/logo.png" alt="Logo" width="150" class="d-inline-block align-top">
+    </a>
+		</div>
+      <div class="col-md-4">
+        <a href="contacto.html" class="footer-link">Contacto</a><br>
+        @vida_oceano<br>
+        vida_oceano@gmail.com
+      </div>
+      <div class="col-md-4">
+        <a href="sobre.html" class="footer-link">Redes</a><br>
+        <a href="contacto.html"><img src="../images/whats.webp" alt="WhatsApp" width="25" class="footer-icon"></a>
+        <a href="contacto.html"><img src="../images/x.webp" alt="X" width="25" class="footer-icon"></a>
+        <a href="contacto.html"><img src="../images/facebook.webp" alt="Facebook" width="25" class="footer-icon"></a>
+        <a href="contacto.html"><img src="../images/instagram.webp" alt="Instagram" width="25" class="footer-icon"></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- JS de Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+	<script>
+  $(document).ready(function () {
+    $('.nav-item.dropdown').on('mouseenter', function () {
+      const $menu = $(this).find('.dropdown-menu');
+      $menu.addClass('show show-animated');
+    }).on('mouseleave', function () {
+      const $menu = $(this).find('.dropdown-menu');
+      $menu.removeClass('show show-animated');
+    });
+  });
+</script>
+
+	<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const elementos = document.querySelectorAll('.scroll-reveal');
+
+    function revealOnScroll() {
+      const ventanaInferior = window.innerHeight + window.scrollY;
+
+      elementos.forEach(el => {
+        const elementoSuperior = el.offsetTop;
+
+        if (ventanaInferior >= elementoSuperior + 100) {
+          el.classList.add('visible');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll(); // Ejecutar en carga inicial
+  });
+</script>
+	
+</body>
+</html>

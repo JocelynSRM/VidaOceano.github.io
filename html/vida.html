@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="es">
+	
+<head>
+  <meta charset="UTF-8">
+	
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+  <title>Vida Marina</title>
+	
+  <!-- Bootstrap 4 CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	
+  <link rel="stylesheet" href="../css/vida.css" type="text/css"> 
+	
+</head>
+	
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+
+    <!-- Logo e Inicio -->
+    <a class="navbar-brand" href="../index.html">
+      <img src="../images/logo2.png" alt="Logo" width="30" height="30" class="d-inline-block align-top">
+      Inicio
+    </a>
+
+    <!-- Botón hamburguesa -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContenido" aria-controls="navbarContenido" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Contenido colapsable -->
+    <div class="collapse navbar-collapse" id="navbarContenido">
+      <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+
+        <!-- Dropdown: Explora y Vida Marina -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="seccion1Dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Aventura Marina
+          </a>
+          <div class="dropdown-menu" aria-labelledby="seccion1Dropdown">
+            <a class="dropdown-item" href="explora.html">Explora los océanos</a>
+            <a class="dropdown-item" href="vida.html">Vida Marina</a>
+          </div>
+        </li>
+
+        <!-- Héroes del Océano -->
+        <li class="nav-item">
+          <a class="nav-link" href="heroes.html">Héroes</a>
+        </li>
+
+        <!-- Amenazas al Océano -->
+        <li class="nav-item">
+          <a class="nav-link" href="amenazas.html">Amenazas</a>
+        </li>
+
+        <!-- Dropdown: Aprende y Recursos -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="seccion2Dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Explora y Aprende
+          </a>
+          <div class="dropdown-menu" aria-labelledby="seccion2Dropdown">
+            <a class="dropdown-item" href="aprende.html">Aprende</a>
+            <a class="dropdown-item" href="recursos.html">Recursos</a>
+          </div>
+        </li>
+
+        <!-- Dropdown: Sobre y Contacto -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="seccion3Dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Conócenos
+          </a>
+          <div class="dropdown-menu" aria-labelledby="seccion3Dropdown">
+            <a class="dropdown-item" href="sobre.html">Nosotros</a>
+            <a class="dropdown-item" href="contacto.html">Contacto</a>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+	
+<!-- Título principal -->
+	<div class="container text-center my-4 scroll-reveal">
+  		<h2 class="scroll-reveal">Vida Marina</h2>
+  		<h4 class="scroll-reveal">Categorías</h4>
+	</div>
+
+<!-- Categorías como pestañas -->
+	<div class="container text-center mb-4 category-buttons scroll-reveal">
+  		<ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+    		<li class="nav-item scroll-reveal" style="color: #005577;">
+      			<a class="nav-link active" id="mamiferos-tab" data-toggle="tab" href="#mamiferos" role="tab">Mamíferos</a>
+    		</li>
+    		<li class="nav-item scroll-reveal">
+      			<a class="nav-link" id="peces-tab" data-toggle="tab" href="#peces" role="tab">Peces</a>
+    		</li>
+    		<li class="nav-item scroll-reveal">
+      			<a class="nav-link" id="invertebrados-tab" data-toggle="tab" href="#invertebrados" role="tab">Invertebrados</a>
+    		</li>
+    		<li class="nav-item scroll-reveal">
+      			<a class="nav-link" id="plantas-tab" data-toggle="tab" href="#plantas" role="tab">Plantas</a>
+    		</li>
+    		<li class="nav-item scroll-reveal">
+      			<a class="nav-link" id="microorganismos-tab" data-toggle="tab" href="#microorganismos" role="tab">Microorganismos</a>
+    		</li>
+  		</ul>
+	</div>
+
+<!-- Contenido de cada categoría -->
+<div class="container scroll-reveal">
+  		<div class="tab-content" id="myTabContent">
+
+    <!-- Mamíferos -->
+    	<div class="tab-pane fade show active" id="mamiferos" role="tabpanel">
+      		<div class="row scroll-reveal">
+        	
+			<!-- Cartas de Mamíferos -->
+        		<div class="col-md-4">
+          			<div class="card scroll-reveal">
+            			<img src="../images/balfines.webp" width="300px" class="card-img-top" alt="Balfines">
+						<div class="card-body">
+              				<h5 class="card-title">Balfines</h5>
+              				<p class="card-text">Los balfines (Tursiops truncatus x Pseudorca crassidens) son una especie híbrida de dos especies de delphiidae: La hembra del delfín mular (Tursiops truncatus) y la falsa orca macho (Pseudorca crassidens). Como mucho de los híbridos, proviene de la mano del hombre.<br>Solamente existen dos casos conocidos de este hibridismo, de los cuales no se ha registrado jamás en la naturaleza.</p>
+            			</div>
+          			</div>
+        		</div>
+				
+        	<!-- Agrega más cartas de mamíferos aquí -->
+				<div class="col-md-4">
+          			<div class="card scroll-reveal">
+            			<img src="../images/lobos marinos.webp" width="300px" class="card-img-top" alt="Lobos Marinos">
+						<div class="card-body">
+              				<h5 class="card-title">Lobos Marinos</h5>
+              				<p class="card-text">Los lobos marinos sudamericanos también conocido como otario de la Patagonia, lobo marino de un pelo, lobo marino chusco, león marino del sur, león marino sudamericano o sencillamente lobo marino, es una especie de mamífero pinnípedo, perteneciente a la familia de los Otariidae. Estos animales se encuentran casi todo el tiempo en el mar. Son muy diestros en el agua. Pero cuando salen a la tierra, se desplazan con el cuerpo levantado sobre los 4 miembros, haciendo movimientos torpes, pero muy rápidos.</p>
+            			</div>
+          			</div>
+        		</div>
+				
+				<div class="col-md-4">
+          			<div class="card scroll-reveal">
+            			<img src="../images/orcas.webp" width="300px" class="card-img-top" alt="Orcas">
+						<div class="card-body">
+              				<h5 class="card-title">Orcas</h5>
+              				<p class="card-text">El término de la palabra orca proviene de Orcinus. Según los estudios  hechos en el  año XVIII se les catalogó a las orcas como ballenas asesinas. Estos cetáceos  viven en diferentes partes del mundo. Tienen la capacidad de comerse a cualquier tipo  de mamífero que se encuentre a su alrededor, ya sean delfines, cualquier tipo de peces, tortugas  y hasta focas. Hay que acotar que dentro de estos cetáceos, el Orcinus es el único en su especie, la mayoría de los científicos marinos siempre tienen algo que resaltar sobre este animal, ya que su estilo de vida es muy diferente al de los demás mamíferos.</p>
+            			</div>
+          			</div>
+        		</div>
+      		</div>
+			
+			<br>
+			<!--Segundo Row-->
+			<div class="row d-flex justify-content-center scroll-reveal">
+        	
+			<!-- Cartas de Mamíferos -->
+        		<div class="col-md-4">
+          			<div class="card scroll-reveal">
+            			<img src="../images/nutria.webp" width="300px" class="card-img-top" alt="Nutria Marina">
+						<div class="card-body">
+              				<h5 class="card-title">Nutria Marina</h5>
+              				<p class="card-text">La nutria marina (Enhydra lutris) pertenece a una especie de mamífero carnívoro de la familia de los mustélidos. Es el único existente del género Enhydra. Se encuentra en el Pacífico Norte, desde el norte de Japón hasta Baja California en México.<br>Los adultos de la nutria marina son considerados como el animal más pesado y pequeño de los mustélidos. Este animal tiene como forma principal de aislamiento una capa de pelaje gruesa. Representa la más espesa de todos los mamíferos. Aunque puede salir a tierra firme, éste habita casi únicamente en el mar.</p>
+            			</div>
+          			</div>
+        		</div>
+				
+        	<!-- Agrega más cartas de mamíferos aquí -->
+				<div class="col-md-4">
+          			<div class="card scroll-reveal">
+            			<img src="../images/focas.webp" width="300px" class="card-img-top" alt="Focas">
+						<div class="card-body">
+              				<h5 class="card-title">Focas</h5>
+              				<p class="card-text">Los fócidos o focas verdaderas (Phocidae) pertenecen a una familia de mamíferos marinos pinnípedos adaptados a habitar mayormente en medios acuáticos. El nombre común proviene directamente del latín phoca, que a la vez tiene se origina del griego φώκη (phṓkē).<br>De este tipo de especies, derivan 19 especies. No poseen pabellón auditivo y sus extremidades ulteriores se dirigen hacia atrás y no son eficaces en el desplazamiento terrestre. Esto los diferencia de los otáridos (osos y lobos marinos).</p>
+            			</div>
+          			</div>
+        		</div>
+      		</div>
+    	</div>
+
+    <!-- Peces -->
+    	<div class="tab-pane fade" id="peces" role="tabpanel">
+      		<div class="row scroll-reveal">
+        	
+			<!-- Cartas de Peces -->
+        		<div class="col-md-4">
+          			<div class="card scroll-reveal">
+            			<img src="../images/sardinas.webp" width="300px" class="card-img-top" alt="Sardina">
+            			<div class="card-body">
+              				<h5 class="card-title">Sardinas</h5>
+              				<p class="card-text">La sardina es un pez pequeño de agua salada que vive en aguas profundas, lejos de la costa. Es pelágica, lo que significa que habita en las zonas más altas del océano, y es muy popular en la cocina, tanto fresca como enlatada.</p>
+            			</div>
+          			</div>
+       	 		</div>
+				
+        	<!-- Más cartas -->
+				<div class="col-md-4">
+          			<div class="card scroll-reveal">
+            			<img src="../images/atun.webp" width="300px" class="card-img-top" alt="Atún">
+            			<div class="card-body">
+              				<h5 class="card-title">Atún</h5>
+              				<p class="card-text">El atún es un pez marino de la familia de los escómbridos, conocidos por su carne roja y su gran tamaño. Son peces migratorios y pelágicos, que viven en aguas poco profundas de los océanos. Se caracterizan por su cuerpo aerodinámico y su potente cola, lo que les permite nadar a grandes velocidades.</p>
+            			</div>
+          			</div>
+       	 		</div>
+				
+				<div class="col-md-4">
+          			<div class="card scroll-reveal">
+            			<img src="../images/bacalao.webp" width="300px" class="card-img-top" alt="Bacalao">
+            			<div class="card-body">
+              				<h5 class="card-title">Bacalao</h5>
+              				<p class="card-text">El bacalao es un pescado blanco, de agua salada, conocido por su carne suave y versátil. Pertenece a la familia de los gádidos (Gadidae) y se encuentra comúnmente en aguas frías del Atlántico Norte. El bacalao es apreciado por su sabor suave y su capacidad para ser preparado de diversas formas, como salado, fresco o ahumado.</p>
+            			</div>
+          			</div>
+       	 		</div>
+      		</div>
+			
+			<br>
+			<!--Segundo Row-->
+			<div class="row d-flex justify-content-center scroll-reveal">
+        	
+			<!-- Cartas de Peces -->
+        		<div class="col-md-4">
+          			<div class="card scroll-reveal">
+            			<img src="../images/salmon.webp" width="300px" class="card-img-top" alt="Salmones">
+            			<div class="card-body">
+              				<h5 class="card-title">Salmones</h5>
+              				<p class="card-text">Los salmones y truchas son peces marinos y de agua dulce de la familia de los salmónidos distribuidos por los océanos y mares de casi todo el mundo, con algunas especies que sólo viven en agua dulce en Europa y Asia. Su nombre procede del latín salmo, que es como llamaban en la antigua Roma a estos peces.</p>
+            			</div>
+          			</div>
+       	 		</div>
+				
+        	<!-- Más cartas -->
+				<div class="col-md-4">
+          			<div class="card scroll-reveal">
+            			<img src="../images/payaso.webp" width="300px" class="card-img-top" alt="Pez Payaso">
+            			<div class="card-body">
+              				<h5 class="card-title">Pez Payaso</h5>
+              				<p class="card-text">Los peces payaso o peces de las anémonas es una subfamilia de peces marinos de la familia Pomacentridae, que engloba únicamente a los géneros Amphiprion y Premnas. Los peces payaso se caracterizan por sus contrastados e intensos colores, rojo, rosa, negro, amarillo, naranja o blanco.</p>
+            			</div>
+          			</div>
+       	 		</div>
+      		</div>
+    	</div>
+
+    <!-- Invertebrados -->
+    	<div class="tab-pane fade" id="invertebrados" role="tabpanel">
+      		<div class="row scroll-reveal">
+        
+			<!-- Cartas de Invertebrados -->
+        		<div class="col-md-4">
+          			<div class="card scroll-reveal">
+            			<img src="../images/calamar gigante.webp" width="300px" class="card-img-top" alt="Calamar Gigante">
+            			<div class="card-body">
+              				<h5 class="card-title">Calamar Gigante</h5>
+              				<p class="card-text">Especie de calamar de aguas profundas de la familia Architeuthidae . Puede alcanzar un tamaño enorme, ofreciendo un ejemplo de gigantismo abisal : estimaciones recientes sitúan el tamaño máximo en alrededor de 12-13 m (39-43 pies) para las hembras y 10 m (33 pies) para los machos, desde las aletas posteriores hasta la punta de los dos largos tentáculos . Esto lo hace más largo que el calamar colosal, con un estimado de 9-10 m (30-33 pies), pero sustancialmente más ligero, ya que los tentáculos constituyen la mayor parte de la longitud. El manto del calamar gigante mide aproximadamente 2 m (6 pies 7 pulgadas) de largo (más largo en las hembras, más corto en los machos), y la longitud del calamar excluyendo sus tentáculos (pero incluyendo la cabeza y los brazos) rara vez supera los 5 m (16 pies). No se han documentado científicamente los reclamos de especímenes que miden 20 m (66 pies) o más.</p>
+            			</div>
+          			</div>
+        		</div>
+				
+			<!-- Más cartas -->
+			<div class="col-md-4">
+          			<div class="card scroll-reveal">
+            			<img src="../images/pulpos.webp" width="300px" class="card-img-top" alt="Pulpo">
+            			<div class="card-body">
+              				<h5 class="card-title">Pulpo</h5>
+              				<p class="card-text">Los octópodos son un orden de moluscos cefalópodos octopodiformes conocidos comúnmente como pulpos. Al igual que otros cefalópodos, el pulpo tiene simetría bilateral, con la boca y el pico situados en el punto central de sus ocho extremidades. Su cuerpo blando puede cambiar rápidamente de forma y textura, permitiendo que el animal se escurra a través de pequeños conductos o grietas. Arrastra sus ocho apéndices detrás de sí cuando nada; el sifón se utiliza tanto para respirar como para la locomoción, expulsando un chorro de agua. Un sistema nervioso complejo y una vista excelente sitúan a los pulpos entre los invertebrados más inteligentes y de mayor diversidad conductual.</p>
+            			</div>
+          			</div>
+        		</div>
+				
+				<div class="col-md-4">
+          			<div class="card scroll-reveal">
+            			<img src="../images/coral.webp" width="300px" class="card-img-top" alt="Coral">
+            			<div class="card-body">
+              				<h5 class="card-title">Coral</h5>
+              				<p class="card-text">Los corales son animales marinos, concretamente cnidarios, que viven en colonias y forman estructuras calcáreas que se conocen como arrecifes de coral. Estos animales, también llamados pólipos, crean esqueletos de carbonato de calcio que, al acumularse, construyen los arrecifes. Los arrecifes de coral son ecosistemas marinos muy importantes, que albergan una gran diversidad de vida.</p>
+            			</div>
+          			</div>
+        		</div>
+     		</div>
+			
+			<br>
+			<!--Segundo Row-->
+			<div class="row d-flex justify-content-center scroll-reveal">
+        
+			<!-- Cartas de Invertebrados -->
+        		<div class="col-md-4">
+          			<div class="card scroll-reveal">
+            			<img src="../images/camaron.webp" width="300px" class="card-img-top" alt="Camarón">
+            			<div class="card-body">
+              				<h5 class="card-title">Camarón</h5>
+              				<p class="card-text">También es conocido como Quisquilla o Esquila. Pertenece a la familia de los Caridea. Es un crustáceo decadópodo, que puede habitar tanto en aguas dulces como saladas. Vive en regiones templadas, tropicales, y frías. Habita en zonas rocosas y arenosas poco profundas con abundancia de Algas. Cuando son adultos se alimenta de Algas y restos de animales aunque pueden comer cualquier cosa que resulte comestible. De larvas se alimentan de zooplancton. La fecundación es interna y las hembras pueden aparearse cuatro o cinco veces por año.</p>
+            			</div>
+          			</div>
+        		</div>
+				
+			<!-- Más cartas -->
+			<div class="col-md-4">
+          			<div class="card scroll-reveal">
+            			<img src="../images/medusa.webp" width="300px" class="card-img-top" alt="Medusas">
+            			<div class="card-body">
+              				<h5 class="card-title">Medusas</h5>
+              				<p class="card-text">Las medusas (Medusozoa), también llamadas aguavivas, aguamalas, aguacuajadas, ortigas de mar o lágrimas de mar, son animales marinos pertenecientes al filo de los cnidarios; son pelágicos, de cuerpo gelatinoso, con forma de campana de la que cuelga un manubrio tubular, con la boca en el extremo inferior, a veces prolongado por largos tentáculos cargados con células urticantes llamados cnidocitos.</p>
+            			</div>
+          			</div>
+        		</div>
+     		</div>
+				
+     		</div>
+
+    <!-- Plantas -->
+    	<div class="tab-pane fade" id="plantas" role="tabpanel">
+      		<div class="row scroll-reveal">
+        	
+			<!-- Cartas de Plantas -->
+        		<div class="col-md-4">
+          			<div class="card scroll-reveal">
+            			<img src="../images/algas.webp" width="300px" class="card-img-top" alt="Algas Verdes">
+            			<div class="card-body">
+              				<h5 class="card-title">Algas Verdes</h5>
+              				<p class="card-text">Las algas verdes o Chlorophyta sensu lato es el grupo parafilético de las algas estrechamente relacionadas con las plantas terrestres. Algunas fuentes usan aún el término Chlorophyta y más antiguamente Chlorophyceae, pero luego estos términos se han usado para delimitar subgrupos, de tal manera que el grupo de "algas verdes" como taxón ha devenido en informal, considerándose que taxonómicamente incluye a los grupos de algas Chlorophyta y Charophyta. Como algas verdes se han descrito hasta ahora unas 10 000 especies diferentes, siendo las más diversas de todas las algas. Aunque se encuentran también en los mares, son más diversas en las aguas continentales (agua dulce) abarcando una amplia variedad de hábitat.</p>
+            			</div>
+          			</div>
+        		</div>
+				
+			<!-- Más cartas -->
+				<div class="col-md-4">
+          			<div class="card scroll-reveal">
+            			<img src="../images/pastos.webp" width="300px" class="card-img-top" alt="Pastos Marinos">
+            			<div class="card-body">
+              				<h5 class="card-title">Pastos Marinos</h5>
+              				<p class="card-text">Las praderas de pastos marinos son un tipo de ecosistemas marinos que están conformadas por plantas angiospermas, los cuales componen densos pastizales submarinos adheridos a los sedimentos (y sustratos tales como lodo, arena, arcilla y rocas) en áreas poco profundas a lo largo de las costas. Este tipo de praderas están consideradas como las únicas plantas marinas que se encuentran completamente sumergidas bajo el mar, ocupando tan solo el 0,2 % del fondo marino. Cuando la marea baja, estas plantas se llegan a observar cerca de la costa como una gran alfombra verde.</p>
+            			</div>
+          			</div>
+        		</div>
+				
+				<div class="col-md-4">
+          			<div class="card scroll-reveal">
+            			<img src="../images/pardas.webp" width="300px" class="card-img-top" alt="Algas Pardas">
+            			<div class="card-body">
+              				<h5 class="card-title">Algas Pardas</h5>
+              				<p class="card-text">Las algas pardas o feofíceas o marrones (clase Phaeophyceae) son un grupo de algas incluido en el reino Protista. No son verdaderas plantas pues se clasifican en el grupo Heterokonta. Comprende unos 265 géneros con unas 1500-2000 especies, principalmente marinos pues solo seis géneros son de agua dulce. Las algas pardas son los principales productores primarios de varias comunidades de animales y protistas.</p>
+            			</div>
+          			</div>
+        		</div>
+      		</div>
+			
+			<br>
+			<!--Segundo Row-->
+			<div class="row d-flex justify-content-center scroll-reveal">
+        	
+			<!-- Cartas de Plantas -->
+        		<div class="col-md-4">
+          			<div class="card scroll-reveal">
+            			<img src="../images/rojas.webp" width="300px" class="card-img-top" alt="Algas Rojas">
+            			<div class="card-body">
+              				<h5 class="card-title">Algas Rojas</h5>
+              				<p class="card-text">Las algas rojas o rodófitas son un importante grupo de algas que comprende unas 7000 especies de una gran diversidad de formas y tamaños. Forman parte de Archaeplastida junto a Glaucophyta (glaucofitas) y Viridiplantae (plantas verdes), el cual es equivalente al reino Plantae en varios sistemas de clasificación. Clásicamente en algunos sistemas de clasificación se agrupan en el reino Protista. Sin embargo hay que tener en cuenta que ese grupo no es válido ya que es un taxón cajón de sastre (un grupo conformado por los eucariotas que no encajaban en ninguno de los otros tres reinos eucarióticos).</p>
+            			</div>
+          			</div>
+        		</div>
+				
+			<!-- Más cartas -->
+				<div class="col-md-4">
+          			<div class="card scroll-reveal">
+            			<img src="../images/fito.webp" width="300px" class="card-img-top" alt="Fitoplancton">
+            			<div class="card-body">
+              				<h5 class="card-title">Fitoplancton</h5>
+              				<p class="card-text">El fitoplancton es el sub-conjunto de organismos acuáticos de comunidades planctónicas que son autótrofos (i.e. organismos que producen sus propias reservas energéticas con la luz solar como fuente principal de energía). Tienen capacidad fotosintética y viven dispersos en el agua. Forman parte de este grupo muchos seres tradicionalmente considerados algas y estudiados como tal (por la botánica y especialmente por la ficología). Actualmente, estos organismos se encuentran clasificados como bacterias —las cianobacterias (algas verdeazuladas)—, las diatomeas, los dinoflagelados, las algas verdes y algunos organismos fotosintéticos aún clasificados como Protistas.</p>
+            			</div>
+          			</div>
+        		</div>
+				
+      		</div>
+    	</div>
+
+    <!-- Microorganismos -->
+    	<div class="tab-pane fade" id="microorganismos" role="tabpanel">
+      		<div class="row scroll-reveal">
+        	
+			<!-- Cartas de Microorganismos -->
+        		<div class="col-md-4">
+          			<div class="card scroll-reveal">
+            			<img src="../images/fito.webp" width="300px" class="card-img-top" alt="Fitoplancton">
+            			<div class="card-body">
+              				<h5 class="card-title">Fitoplancton</h5>
+              				<p class="card-text">El fitoplancton es el sub-conjunto de organismos acuáticos de comunidades planctónicas que son autótrofos (i.e. organismos que producen sus propias reservas energéticas con la luz solar como fuente principal de energía). Tienen capacidad fotosintética y viven dispersos en el agua. Forman parte de este grupo muchos seres tradicionalmente considerados algas y estudiados como tal (por la botánica y especialmente por la ficología). Actualmente, estos organismos se encuentran clasificados como bacterias —las cianobacterias (algas verdeazuladas)—, las diatomeas, los dinoflagelados, las algas verdes y algunos organismos fotosintéticos aún clasificados como Protistas.</p>
+            			</div>
+          			</div>
+        		</div>
+				
+			<!-- Más cartas -->
+				<div class="col-md-4">
+          			<div class="card scroll-reveal">
+            			<img src="../images/zoo.webp" width="300px" class="card-img-top" alt="Zooplancton">
+            			<div class="card-body">
+              				<h5 class="card-title">Zooplancton</h5>
+              				<p class="card-text">Tradicionalmente, se ha dividido a la comunidad planctónica en fitoplancton o plancton vegetal y en zooplancton o plancton animal. Se denomina zooplancton a la fracción del plancton constituida por seres que se alimentan por ingestión de materia orgánica ya elaborada. Está constituido por protozoos, es decir, protistas diversos, fagótrofos que engloban el alimento fagocitándolo. También por larvas de animales más grandes, como esponja, gusanos, equinodermos, moluscos o crustáceos, y de otros artrópodos marinos, así como formas adultas de pequeño tamaño de crustáceos —como copépodos o cladóceros—, rotíferos, y fases juveniles de peces (alevines).</p>
+            			</div>
+          			</div>
+        		</div>
+				
+				<div class="col-md-4">
+          			<div class="card scroll-reveal">
+            			<img src="../images/bacterias.webp" width="300px" class="card-img-top" alt="Bacterias Marinas">
+            			<div class="card-body">
+              				<h5 class="card-title">Bacterias Marinas</h5>
+              				<p class="card-text">Las bacterias marinas son organismos unicelulares que habitan en los océanos y estuarios, desempeñando un papel crucial en el ecosistema marino. Son fundamentales en la descomposición de materia orgánica, el ciclo biogeoquímico y la degradación de contaminantes. Además, algunas bacterias marinas tienen potencial para el desarrollo de nuevas terapias. </p>
+            			</div>
+          			</div>
+        		</div>
+      		</div>
+			
+			<br>
+			<!--Segundo Row-->
+			<div class="row d-flex justify-content-center scroll-reveal">
+        	
+			<!-- Cartas de Microorganismos -->
+        		<div class="col-md-4">
+          			<div class="card scroll-reveal">
+            			<img src="../images/arqueas.webp" width="300px" class="card-img-top" alt="Arqueas">
+            			<div class="card-body">
+              				<h5 class="card-title">Arqueas</h5>
+              				<p class="card-text">Las arqueas), a veces llamadas árqueas, son un gran grupo de microorganismos procariotas unicelulares que, al igual que las bacterias, no presentan núcleo (pero sí nucleolo) ni orgánulos membranosos internos, pero son fundamentalmente diferentes a estas, de tal manera que conforman su propio dominio.</p>
+            			</div>
+          			</div>
+        		</div>
+				
+			<!-- Más cartas -->
+				<div class="col-md-4">
+          			<div class="card scroll-reveal">
+            			<img src="../images/ciano.webp" width="300px" class="card-img-top" alt="Cianobacterias">
+            			<div class="card-body">
+              				<h5 class="card-title">Cianobacterias</h5>
+              				<p class="card-text">Las cianobacterias fueron designadas durante en el pasado como «algas cianófitas», cianofíceas (Cyanophyceae, literalmente, «algas azules») o Cyanobacteria, castellanizándose a menudo como algas verde-azuladas o azul verdosas. Cuando se descubrió la distinción entre célula procariota y eucariota se constató que éstas eran las únicas «algas» procariotas, y el término «Cyanobacteria» (se había llamado siempre bacterias a los procariontes conocidos) empezó a ganar preferencia. Los análisis morfológicos y genéticos recientes sitúan a las cianobacterias entre las bacterias gramnegativas, y lo son también sus descendientes que por endosimbiosis dieron lugar a los plastos. Por lo tanto, no son algas.</p>
+            			</div>
+          			</div>
+        		</div>
+				
+      		</div>
+    	</div>
+</div>
+  	</div>
+	<br>
+	
+<!-- FOOTER -->
+<footer class="footer text-center">
+  <div class="container">
+    <div class="row">
+		<div class="col-md-4">
+		<a class="navbar-brand" href="../index.html">
+      <img src="../images/logo.png" alt="Logo" width="150" class="d-inline-block align-top">
+    </a>
+		</div>
+      <div class="col-md-4">
+        <a href="contacto.html" class="footer-link">Contacto</a><br>
+        @vida_oceano<br>
+        vida_oceano@gmail.com
+      </div>
+      <div class="col-md-4">
+        <a href="sobre.html" class="footer-link">Redes</a><br>
+        <a href="contacto.html"><img src="../images/whats.webp" alt="WhatsApp" width="25" class="footer-icon"></a>
+        <a href="contacto.html"><img src="../images/x.webp" alt="X" width="25" class="footer-icon"></a>
+        <a href="contacto.html"><img src="../images/facebook.webp" alt="Facebook" width="25" class="footer-icon"></a>
+        <a href="contacto.html"><img src="../images/instagram.webp" alt="Instagram" width="25" class="footer-icon"></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap 4 JS y dependencias -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+	<script>
+  $(document).ready(function () {
+    $('.nav-item.dropdown').on('mouseenter', function () {
+      const $menu = $(this).find('.dropdown-menu');
+      $menu.addClass('show show-animated');
+    }).on('mouseleave', function () {
+      const $menu = $(this).find('.dropdown-menu');
+      $menu.removeClass('show show-animated');
+    });
+  });
+</script>
+
+	<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const elementos = document.querySelectorAll('.scroll-reveal');
+
+    function revealOnScroll() {
+      const ventanaInferior = window.innerHeight + window.scrollY;
+
+      elementos.forEach(el => {
+        const elementoSuperior = el.offsetTop;
+
+        if (ventanaInferior >= elementoSuperior + 100) {
+          el.classList.add('visible');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll(); // Ejecutar en carga inicial
+  });
+</script>
+	
+</body>
+</html>

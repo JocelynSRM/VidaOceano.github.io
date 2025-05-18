@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+	
+<head>
+  <meta charset="UTF-8">
+  <title>Explora los océanos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+  <!-- Bootstrap 4 CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	
+ <link rel="stylesheet" href="../css/explora.css" type="text/css">
+	
+  
+</head>
+	
+<body>
+	
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+
+    <!-- Logo e Inicio -->
+    <a class="navbar-brand" href="../index.html">
+      <img src="../images/logo2.png" alt="Logo" width="30" height="30" class="d-inline-block align-top">
+      Inicio
+    </a>
+
+    <!-- Botón hamburguesa -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContenido" aria-controls="navbarContenido" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Contenido colapsable -->
+    <div class="collapse navbar-collapse" id="navbarContenido">
+      <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+
+        <!-- Dropdown: Explora y Vida Marina -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="seccion1Dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Aventura Marina
+          </a>
+          <div class="dropdown-menu" aria-labelledby="seccion1Dropdown">
+            <a class="dropdown-item" href="explora.html">Explora los océanos</a>
+            <a class="dropdown-item" href="vida.html">Vida Marina</a>
+          </div>
+        </li>
+
+        <!-- Héroes del Océano -->
+        <li class="nav-item">
+          <a class="nav-link" href="heroes.html">Héroes</a>
+        </li>
+
+        <!-- Amenazas al Océano -->
+        <li class="nav-item">
+          <a class="nav-link" href="amenazas.html">Amenazas</a>
+        </li>
+
+        <!-- Dropdown: Aprende y Recursos -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="seccion2Dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Explora y Aprende
+          </a>
+          <div class="dropdown-menu" aria-labelledby="seccion2Dropdown">
+            <a class="dropdown-item" href="aprende.html">Aprende</a>
+            <a class="dropdown-item" href="recursos.html">Recursos</a>
+          </div>
+        </li>
+
+        <!-- Dropdown: Sobre y Contacto -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="seccion3Dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Conócenos
+          </a>
+          <div class="dropdown-menu" aria-labelledby="seccion3Dropdown">
+            <a class="dropdown-item" href="sobre.html">Nosotros</a>
+            <a class="dropdown-item" href="contacto.html">Contacto</a>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Encabezado principal -->
+<div class="container text-center mt-4 scroll-reveal">
+  <h2 class="scroll-reveal">Explora los océanos</h2><br>
+
+  <!-- Imagen con mapa -->
+ <img src="../images/oceanos.jpg" id="mapaOceanos" usemap="#image-map" class="img-fluid rounded scroll-reveal" alt="Mapa Mundi - Océanos" style="max-height: 350px;">
+
+
+  <!-- Mapa interactivo -->
+  <map name="image-map">
+    <area alt="Océano Ártico" title="Océano Ártico" shape="rect" coords="754,9,1148,80" onclick="mostrarFicha('Ártico', null); return false;">
+    <area alt="Océano Pacífico" title="Océano Pacífico" shape="rect" coords="86,755,317,870" onclick="mostrarFicha('Pacífico', null); return false;">
+    <area alt="Océano Atlántico" title="Océano Atlántico" shape="rect" coords="748,871,1010,976" onclick="mostrarFicha('Atlántico', null); return false;">
+    <area alt="Océano Antártico" title="Océano Antártico" shape="rect" coords="824,1163,1296,1223" onclick="mostrarFicha('Austral', null); return false;">
+    <area alt="Océano Índico" title="Océano Índico" shape="rect" coords="1292,817,1504,923" onclick="mostrarFicha('Índico', null); return false;">
+    <area alt="Océano Pacífico Este" title="Océano Pacífico" shape="rect" coords="1755,596,1969,705" onclick="mostrarFicha('Pacífico', null); return false;">
+  </map>
+
+  <h6 class="mt-4 scroll-reveal">Ficha por región</h6>
+
+  <!-- Botones por océano -->
+  <div class="d-flex flex-wrap justify-content-center scroll-reveal">
+    <button class="btn btn-ocean" onclick="mostrarFicha('Pacífico', this)">Océano Pacífico</button>
+    <button class="btn btn-ocean" onclick="mostrarFicha('Atlántico', this)">Océano Atlántico</button>
+    <button class="btn btn-ocean" onclick="mostrarFicha('Índico', this)">Océano Índico</button>
+    <button class="btn btn-ocean" onclick="mostrarFicha('Ártico', this)">Océano Ártico</button>
+    <button class="btn btn-ocean" onclick="mostrarFicha('Austral', this)">Océano Austral (o Antártico)</button>
+  </div>
+
+  <!-- Contenedor de la ficha -->
+  <div id="ficha" class="mt-4 d-none scroll-reveal">
+    <h4 id="tituloFicha" class="text-center mb-4 scroll-reveal"></h4>
+    <div class="row scroll-reveal">
+      <div class="col-md-6 text-left scroll-reveal" id="contenidoFicha"></div>
+      <div class="col-md-6 text-center scroll-reveal"><br>
+        <img id="imagenFicha" src="#" alt="Océano" class="d-none scroll-reveal">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Script principal -->
+<script>
+  const fichas = {
+    "Pacífico": {
+      texto: `
+        🌍 <strong>Superficie:</strong> 168 millones de km²<br>
+        📏 <strong>Profundidad media:</strong> 4.280 metros<br>
+        🌊 <strong>Punto más profundo:</strong> Fosa de las Marianas – 11.034 m<br>
+        📍 <strong>Ubicación:</strong> Entre Asia, Oceanía y América<br>
+        🌡️ <strong>Temperatura:</strong> 0 °C a 30 °C<br>
+        💨 <strong>Corrientes:</strong> Kuroshio, Ecuatorial<br>
+        🏝️ <strong>Islas:</strong> Filipinas, Japón, Polinesia<br>
+        🌐 <strong>Importancia:</strong> Más biodiversidad marina<br>
+      `,
+      imagen: "../images/pacifico.webp"
+    },
+    "Atlántico": {
+      texto: `
+        🌍 <strong>Superficie:</strong> 106 millones de km²<br>
+        📏 <strong>Profundidad media:</strong> 3.646 metros<br>
+        🌊 <strong>Punto más profundo:</strong> Fosa de Puerto Rico – 8.376 m<br>
+        📍 <strong>Ubicación:</strong> Entre América, Europa y África<br>
+        🌡️ <strong>Temperatura:</strong> 2 °C a 28 °C<br>
+        💨 <strong>Corrientes:</strong> Corriente del Golfo<br>
+        🏝️ <strong>Islas:</strong> Caribe, Azores<br>
+        🌐 <strong>Importancia:</strong> Tráfico marítimo y pesca<br>
+      `,
+      imagen: "../images/atlantico.webp"
+    },
+    "Índico": {
+      texto: `
+        🌍 <strong>Superficie:</strong> 70 millones de km²<br>
+        📏 <strong>Profundidad media:</strong> 3.741 metros<br>
+        🌊 <strong>Punto más profundo:</strong> Fosa de Java – 7.258 m<br>
+        📍 <strong>Ubicación:</strong> Rodeado por Asia, África y Oceanía<br>
+        🌡️ <strong>Temperatura:</strong> 20 °C a 28 °C<br>
+        💨 <strong>Corrientes:</strong> Monzónicas<br>
+        🏝️ <strong>Islas:</strong> Maldivas, Seychelles<br>
+        🌐 <strong>Importancia:</strong> Rutas comerciales y biodiversidad<br>
+      `,
+      imagen: "../images/indico.webp"
+    },
+    "Ártico": {
+      texto: `
+        🌍 <strong>Superficie:</strong> 14 millones de km²<br>
+        📏 <strong>Profundidad media:</strong> 1.205 metros<br>
+        🌊 <strong>Punto más profundo:</strong> Cuenca Eurasiana – 5.450 m<br>
+        📍 <strong>Ubicación:</strong> Alrededor del Polo Norte<br>
+        🌡️ <strong>Temperatura:</strong> -2 °C a 10 °C<br>
+        💨 <strong>Corrientes:</strong> Transpolar, Beaufort<br>
+        🏝️ <strong>Islas:</strong> Svalbard, Groenlandia<br>
+        🌐 <strong>Importancia:</strong> Ecosistemas únicos y clima global<br>
+      `,
+      imagen: "../images/artico.webp"
+    },
+    "Austral": {
+      texto: `
+        🌊 <strong>Océano Austral (o Antártico)</strong><br>
+        🌍 <strong>Superficie:</strong> 21 millones de km²<br>
+        📏 <strong>Profundidad media:</strong> 4.000 a 5.000 metros<br>
+        🌊 <strong>Punto más profundo:</strong> Fosa de las Sándwich del Sur – 7.235 m<br>
+        📍 <strong>Ubicación:</strong> Rodea la Antártida<br>
+        🌡️ <strong>Temperatura:</strong> -2 °C a 10 °C<br>
+        💨 <strong>Corrientes:</strong> Corriente Circumpolar Antártica<br>
+        🏝️ <strong>Islas:</strong> Georgia del Sur, Sándwich del Sur<br>
+        🌐 <strong>Importancia:</strong> Clave en circulación oceánica global<br>
+        🌪️ <strong>Fenómenos:</strong> Tormentas polares, glaciares flotantes
+      `,
+      imagen: "../images/antartico.webp"
+    }
+  };
+
+  function mostrarFicha(region, botonSeleccionado) {
+    const ficha = fichas[region];
+    document.getElementById("tituloFicha").innerText = "Océano " + region;
+    document.getElementById("contenidoFicha").innerHTML = ficha.texto;
+
+    const imagen = document.getElementById("imagenFicha");
+    if (ficha.imagen) {
+      imagen.src = ficha.imagen;
+      imagen.classList.remove("d-none");
+    } else {
+      imagen.classList.add("d-none");
+    }
+
+    document.getElementById("ficha").classList.remove("d-none");
+
+    // Evita error si el clic vino desde <area>
+    if (botonSeleccionado) {
+      const botones = document.querySelectorAll(".btn-ocean");
+      botones.forEach(btn => btn.classList.remove("active"));
+      botonSeleccionado.classList.add("active");
+    }
+  }
+	
+	
+  function hacerMapaResponsivo(imagenId, mapName) {
+    const img = document.getElementById(imagenId);
+    const map = document.querySelector(`map[name="${mapName}"]`);
+    const areas = map.getElementsByTagName("area");
+    const coordsOriginales = [];
+
+    // Guardar coordenadas originales
+    for (let i = 0; i < areas.length; i++) {
+      coordsOriginales[i] = areas[i].coords.split(',').map(Number);
+    }
+
+    function redimensionarAreas() {
+      const anchoOriginal = img.naturalWidth;
+      const altoOriginal = img.naturalHeight;
+
+      const anchoActual = img.offsetWidth;
+      const altoActual = img.offsetHeight;
+
+      const escalaX = anchoActual / anchoOriginal;
+      const escalaY = altoActual / altoOriginal;
+
+      for (let i = 0; i < areas.length; i++) {
+        const nuevosCoords = coordsOriginales[i].map((coord, index) => {
+          return index % 2 === 0
+            ? Math.round(coord * escalaX)
+            : Math.round(coord * escalaY);
+        });
+        areas[i].coords = nuevosCoords.join(',');
+      }
+    }
+
+    window.addEventListener("resize", redimensionarAreas);
+    img.addEventListener("load", redimensionarAreas);
+
+    // Por si la imagen ya estaba cargada
+    if (img.complete) {
+      redimensionarAreas();
+    }
+  }
+
+  // Activar el mapa responsivo
+  document.addEventListener("DOMContentLoaded", function () {
+    hacerMapaResponsivo("mapaOceanos", "image-map");
+  });
+
+</script>
+
+	
+	<br>
+	
+<!-- FOOTER -->
+<footer class="footer text-center">
+  <div class="container">
+    <div class="row">
+		<div class="col-md-4">
+		<a class="navbar-brand" href="../index.html">
+      <img src="../images/logo.png" alt="Logo" width="150" class="d-inline-block align-top">
+    </a>
+		</div>
+      <div class="col-md-4">
+        <a href="contacto.html" class="footer-link">Contacto</a><br>
+        @vida_oceano<br>
+        vida_oceano@gmail.com
+      </div>
+      <div class="col-md-4">
+        <a href="sobre.html" class="footer-link">Redes</a><br>
+        <a href="contacto.html"><img src="../images/whats.webp" alt="WhatsApp" width="25" class="footer-icon"></a>
+        <a href="contacto.html"><img src="../images/x.webp" alt="X" width="25" class="footer-icon"></a>
+        <a href="contacto.html"><img src="../images/facebook.webp" alt="Facebook" width="25" class="footer-icon"></a>
+        <a href="contacto.html"><img src="../images/instagram.webp" alt="Instagram" width="25" class="footer-icon"></a>
+      </div>
+    </div>
+  </div>
+</footer>
+	
+	<!-- Bootstrap 4 JS y dependencias -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	
+	<script>
+  $(document).ready(function () {
+    $('.nav-item.dropdown').on('mouseenter', function () {
+      const $menu = $(this).find('.dropdown-menu');
+      $menu.addClass('show show-animated');
+    }).on('mouseleave', function () {
+      const $menu = $(this).find('.dropdown-menu');
+      $menu.removeClass('show show-animated');
+    });
+  });
+</script>
+
+	<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const elementos = document.querySelectorAll('.scroll-reveal');
+
+    function revealOnScroll() {
+      const ventanaInferior = window.innerHeight + window.scrollY;
+
+      elementos.forEach(el => {
+        const elementoSuperior = el.offsetTop;
+
+        if (ventanaInferior >= elementoSuperior + 100) {
+          el.classList.add('visible');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll(); // Ejecutar en carga inicial
+  });
+</script>
+
+</body>
+</html>
