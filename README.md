@@ -1,1 +1,1 @@
-# VidaOceano.github.io
+# vidaoceano.github.io
